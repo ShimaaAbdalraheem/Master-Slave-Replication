@@ -15,24 +15,22 @@ It manages **customers, products, orders**, and offers advanced **database admin
 ## 📁 Project Structure
 
 ddb_final/
-│
+├── crud_operation.go    # Core database operations
+├── function.go          # Business logic
+├── handler.go           # HTTP controllers  
+├── schema.sql           # database schema
+├── master.go             # Slave node entry
+├── templates/           # HTML views
+│   ├── base.html
+│   ├── customers.html
+│   └── ...
 ├── static/ # Static assets (CSS, JS, images)
-│
-├── templates/ # HTML templates
-│ └── *.html
-│
-├── config.yaml # Configuration file
-├── schema.sql  # Sample data or metadata
-│
-├── crud_operations.go # Core DB operations (CRUD)
-├── functions.go # Utility/helper functions
-├── handler.go # HTTP handlers for routing logic
-│
-│
-│__ README.md # readme file
-│
 ├── go.mod # Go module file
-└── go.sum # Go dependencies checksum
+├── go.sum # Go dependencies checksum 
+└── README.md
+
+
+
 
 ---
 
