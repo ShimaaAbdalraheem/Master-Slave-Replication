@@ -155,7 +155,8 @@ sequenceDiagram
     Master->>MasterDB: Execute Query
   
 ```
-
+## Structure Diagram
+![Replication Flow](structure.png)
 ## 📂 Project Structure
 
 ```

@@ -27,20 +27,8 @@ The system is a **distributed e-commerce database management system** that suppo
 
    - Each slave receives the query and executes it.
 
-```mermaid
-sequenceDiagram
-    participant Client
-    participant Master
-    participant Slave1
-    participant SlaveDB
-  
-    Client->>Master: HTTP Request (CRUD Operation)
-    Master->>MasterDB: Commit Transaction
-    Master->>Slave1: POST /replicate (with SQL query)
-    Slave1->>SlaveDB: Execute Replicated Query
-    Slave1-->>Master: HTTP 200 OK
-    Master-->>Client: Operation Success
-```
+![Replication Flow](master.png)
+
 
 #### **1.2.2 From Slaves Side:**
 
@@ -56,21 +44,7 @@ sequenceDiagram
 
    - master receives the query and executes it.
 
-```mermaid
-sequenceDiagram
-    participant Client
-    participant Slave1
-    participant Slave2
-    participant Master
-
-    Client->>Slave1: INSERT INTO products...
-    Slave1->>Slave1DB: Execute Query 
-    Slave1->>Slave2: POST /replicate
-    Slave2->>Slave2DB: Execute Query
-    Slave1->>Master: POST /replicate 
-    Master->>MasterDB: Execute Query
-  
-```
+![Replication Flow](slave.png)
 
 ---
 
@@ -133,8 +107,10 @@ sequenceDiagram
 4. **Use WebSockets** for real-time dashboard updates.
 
 ---
-
-## **5. Conclusion**
+## 5. **Structure**
+![Replication Flow](structure.png)
+---
+## **6. Conclusion**
 
 The system successfully implements **master-slave replication** with **conflict resolution and** **scalable query handling.** While HTTP-based replication is simpler than MySQL-native methods, it ensures **cross-version compatibility** and **easier debugging**. Future work includes **GTID replication** and **auto-failover** for higher availability.
 
@@ -142,4 +118,4 @@ The system successfully implements **master-slave replication** with **conflict 
 
 **Submited at:
 Date**: 15/5/2025
-**GitHub**: [github.com/your-repo](https://github.com/your-repo)
+**GitHub**: https://github.com/ShimaaAbdalraheem/Master-Slave-Replication
