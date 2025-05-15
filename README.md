@@ -44,7 +44,7 @@ A distributed e-commerce database system with master-slave replication architect
 Clone the repository:
 
 ```bash
-git clone https://github.com/Radwa812-Apps/ddb_final/tree/final_slave
+git clone https://github.com/ShimaaAbdalraheem/Master-Slave-Replication/tree/slave
 cd ecommerce-dbms
 ```
 
