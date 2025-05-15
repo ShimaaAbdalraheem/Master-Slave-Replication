@@ -17,7 +17,7 @@ It manages **customers, products, orders**, and offers advanced **database admin
 ddb_final/
 ├── crud_operation.go    # Core database operations
 ├── function.go          # Business logic
-├── handler.go           # HTTP controllers  
+├── handler.go           # HTTP controllers
 ├── schema.sql           # database schema
 ├── master.go             # Slave node entry
 ├── templates/           # HTML views
@@ -26,11 +26,8 @@ ddb_final/
 │   └── ...
 ├── static/ # Static assets (CSS, JS, images)
 ├── go.mod # Go module file
-├── go.sum # Go dependencies checksum 
+├── go.sum # Go dependencies checksum
 └── README.md
-
-
-
 
 ---
 
@@ -155,11 +152,8 @@ Ensure each slave node exposes a `/replicate` endpoint.
 
 ## 🔄 Replication Flow
 
-![Replication Flow](master.png)
----
 ## Structure Diagram
-![Replication Flow](structure.png)
----
+
 ## 📚 API Documentation
 
 ### 🔄 Replication API
@@ -262,6 +256,5 @@ This project is licensed under the **MIT License**.
 
 ## 📬 Contact
 
-**Your Name**
 📧 Email: Shaima.AbdulRahim829@compit.aun.edu.eg
 🔗 GitHub: https://github.com/Radwa812-Apps
