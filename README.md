@@ -77,6 +77,8 @@ Build and run:
 go build
 ./ecommerce-dbms
 ```
+
+> **Note**: Ensure all nodes can communicate on the specified ports (8080 for master, 8081 for slave by default)
 ---
 
 ## 🌐 Usage
@@ -193,9 +195,3 @@ This project is licensed under the  **MIT License** .
 
 ---
 
-```bash
-# Quick Start
-make deploy && ./ecommerce-dbms
-```
-
-> **Note**: Ensure all nodes can communicate on the specified ports (8080 for master, 8081 for slave by default)
