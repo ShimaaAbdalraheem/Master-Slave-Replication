@@ -155,8 +155,13 @@ To add a new slave node, include its info in the `snaps` slice:
 
 Ensure each slave node exposes a `/replicate` endpoint.
 
----
+## 🔄 Replication Flow
 
+![Replication Flow](master.png)
+---
+## Structure Diagram
+![Replication Flow](structure.png)
+---
 ## 📚 API Documentation
 
 ### 🔄 Replication API
